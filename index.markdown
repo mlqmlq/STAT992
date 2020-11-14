@@ -37,3 +37,10 @@ while read p; do
 done <s2-corpus-000 
 
 ```
+We iterate through each line and check whether the `fieldOfStudy` equals to `Mathematics` or `Computer Science`. If so, we copy the line to the file `out.json`.
+
+
+
+
+
+
