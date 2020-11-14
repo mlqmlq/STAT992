@@ -3,11 +3,21 @@ title: [STAT 992]
 layout: home
 ---
 
-## STAT 992: Data Science with Graphs
+# STAT 992: Data Science with Graphs
 
-### Team Member (alphabetical order): Yutian Liu, Ziyi Liu, Linquan Ma, Peng Yu 
+## Team Member (alphabetical order): Yutian Liu, Ziyi Liu, Linquan Ma, Peng Yu 
 
-### Blog post: Data Preprocessing
+## Blog post: Data Preprocessing
+In the final project, we are dealing with the academic citation network data. Hence, in this post, we illustrate how we did data preprocessing here.
+
+After downloading the data, we have in total 186 zipped files with each around 1.5 GB after unzipping. The first line of the first JSON file is of the following form:
+
+```JSON
+{"entities":[],"magId":"409509287","journalVolume":"37","journalPages":"141-145","pmid":"","fieldsOfStudy":["Environmental Science"],"year":1993,"outCitations":[],"s2Url":"https://semanticscholar.org/paper/5bd3e1fe913dea18eb5d485b3c481e491d3afd04","s2PdfUrl":"","id":"5bd3e1fe913dea18eb5d485b3c481e491d3afd04","authors":[{"name":"佐藤 正仁","ids":["87354532"]},{"name":"大野 芳和","ids":["108325260"]}],"journalName":"","paperAbstract":"","inCitations":[],"pdfUrls":[],"title":"熱帯地域における農業振興と環境保全 Ｉｖ．農業生産性向上と環境保全 熱帯畑作と環境保全","doi":"","sources":[],"doiUrl":"","venue":""}
+
+```
+
+
 
 ```shell
 #!/bin/bash
